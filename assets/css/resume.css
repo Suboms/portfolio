@@ -75,11 +75,11 @@ hr {
   border-top: 1px solid #e1e7ed;
 }
 .left {
-  width: 30%;
+  width: 35%;
   margin-right: 20px;
 }
 .right {
-  width: 70%;
+  width: 65%;
 }
 .contact,
 .tools,
@@ -169,4 +169,84 @@ hr {
   font-size: 1.3rem;
   word-spacing: 5px;
   line-height: 1.5;
+}
+.experience {
+  padding: 20px;
+}
+.job-description {
+  padding: 10px;
+}
+.job-list li {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.job-title,
+.job-duration {
+  text-indent: 10px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.education,
+.about-me,
+.work-experience,
+.tools,
+.contanct {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.back-container{
+  float: right;
+  padding-bottom: 15px;
+  
+}
+.back-button{
+  font-size: 50px;
+  color: #99a3b2;
+  margin: 0;
+  background-color: rgba(65, 65, 65, 0.842);
+  border-radius: 50%;
+}
+.back-link{
+  text-decoration: none;
+  color: #99a3b2;
+  font-size: 20px;
+  margin: 0;
+
+}
+.back-link span{
+  font-size: 20px;
+}
+.back-link:visited{
+  text-decoration: none;
+  color: #99a3b2;
+  font-size: 20px;
+  margin: 0;
+}
+.back-link:hover{
+  text-decoration: none;
+  color: #505153;
+  font-size: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width:800px){
+  #body{
+    max-width: 100%;
+    width: 100%;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .left,.right{
+    width: 100%;
+  }
+  .education,.contact,.tools,.about-me,.work-experience{
+    width: 100%;
+  }
 }
