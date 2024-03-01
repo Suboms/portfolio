@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 #body {
   height: 100vh;
@@ -28,66 +30,143 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
-  max-width: 1280px;
-  margin: auto;
+  word-wrap: break-word;
+  word-break: break-word;
 }
+
 .header-image {
   width: 124px;
   height: 124px;
+  flex-shrink: 0; /* Prevent image from shrinking */
 }
+
 .header-image img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
+
 .user-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-  text-align: left;
+  flex: 1; /* Take remaining space */
+  margin-left: 20px; /* Adjust spacing between image and text */
+  word-wrap: break-word;
+  word-break: break-word;
 }
+
+.user-info h1,
 .user-info h2 {
+  margin: 0; /* Remove default margin */
+}
+
+.user-info h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
 }
-.user-info h4 {
-  font-size: 1.5rem;
+
+.user-info h2 {
+  font-size: 1.2rem; /* Adjust font size for title */
   font-weight: 500;
-  margin-bottom: 10px;
 }
-.main{
+
+.main {
   display: flex;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0; */
 }
-.contact{
-    width: 100%;
+hr {
+  border-top: 1px solid #e1e7ed;
 }
 .left {
   width: 30%;
   margin-right: 20px;
 }
-.social-info{
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+.right {
+  width: 70%;
 }
-.social-info-image{
-    width: 15%;
+.contact,
+.tools,
+.education {
+  width: 90%;
 }
-.social-info-link{
-    width: 85%;
+.contact-header,
+.tools-header,
+.education-header,
+.about-me-header,
+.work-experience-header {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #99a3b2;
 }
-.info-link{
-    text-decoration: none;
-    color:#111111ee
+.social-info {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
 }
-.info-link:visited{
-    text-decoration: none;
-    color:#111111ee
+.social-info-image {
+  width: 15%;
+}
+.social-info-link {
+  width: 75%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.info-link {
+  color: #111111ee;
+  cursor: pointer;
+}
+.info-link:visited {
+  color: #111111ee;
+  cursor: pointer;
+}
+#html-list {
+  text-transform: uppercase;
+}
+.tools-skill-list {
+  padding: 5px 20px 0;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.tools-list li {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.school-name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.course {
+  text-indent: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.qualification-level {
+  text-indent: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.year-awarded {
+  text-indent: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.qualification-list {
+  padding: 10px;
+}
+.qualification-one,
+.qualification-two,
+.qualification-three {
+  padding: 10px 0;
+}
+.about-content {
+  padding: 10px 0;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.about-text {
+  font-size: 1.3rem;
+  word-spacing: 5px;
+  line-height: 1.5;
 }
