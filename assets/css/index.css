@@ -40,10 +40,12 @@
 }
 .nav-item a {
   text-decoration: none;
-  color: rgba(15, 15, 15, 0.788);
+  color: rgb(15, 15, 15);
+  font-weight: 500;
+  font-size: 20px;
 }
 .nav-item a:visited {
-  background-color: rgba(15, 15, 15, 0.788);
+  background-color: rgb(15, 15, 15);
   text-decoration: none;
 }
 .hero {
