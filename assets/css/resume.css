@@ -200,53 +200,124 @@ hr {
   word-wrap: break-word;
   word-break: break-word;
 }
-.back-container{
+.back-container {
   float: right;
   padding-bottom: 15px;
-  
 }
-.back-button{
+.back-button {
   font-size: 50px;
   color: #99a3b2;
   margin: 0;
   background-color: rgba(65, 65, 65, 0.842);
   border-radius: 50%;
 }
-.back-link{
-  text-decoration: none;
-  color: #99a3b2;
-  font-size: 20px;
-  margin: 0;
-
-}
-.back-link span{
-  font-size: 20px;
-}
-.back-link:visited{
+.back-link {
   text-decoration: none;
   color: #99a3b2;
   font-size: 20px;
   margin: 0;
 }
-.back-link:hover{
+.back-link span {
+  font-size: 20px;
+}
+.back-link:visited {
+  text-decoration: none;
+  color: #99a3b2;
+  font-size: 20px;
+  margin: 0;
+}
+.back-link:hover {
   text-decoration: none;
   color: #505153;
   font-size: 20px;
   margin: 0;
 }
 
-@media screen and (max-width:800px){
-  #body{
+@media screen and (max-width: 800px) {
+  #body {
     max-width: 100%;
     width: 100%;
   }
-  .main{
+  .main {
     flex-direction: column;
   }
-  .left,.right{
+  .left,
+  .right {
     width: 100%;
   }
-  .education,.contact,.tools,.about-me,.work-experience{
+  .education,
+  .contact,
+  .tools,
+  .about-me,
+  .work-experience {
     width: 100%;
+  }
+
+  .social-info-image {
+    width: 9%;
+  }
+  .tools-list li{
+    font-size: 0.9rem;
+  }
+  .course, .qualification-level, .year-awarded{
+    font-size: 0.8rem;
+  }
+  .about-text{
+    font-size: 0.9rem;
+  }
+  .company-name{
+    font-size: 1rem;
+  }
+  .job-duration, .job-title{
+    font-size: 0.8rem;
+  }
+  .job-list li{
+    font-size: 0.9rem;
+  }
+}
+
+@media print {
+  body {
+    width: 800px;
+    max-width: 800px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .education,
+  .contact,
+  .tools,
+  .about-me,
+  .work-experience {
+    width: 100%;
+  }
+
+  .social-info-image {
+    width: 9%;
+  }
+  .tools-list li{
+    font-size: 0.9rem;
+  }
+  .course, .qualification-level, .year-awarded{
+    font-size: 0.8rem;
+  }
+  .about-text{
+    font-size: 0.9rem;
+  }
+  .company-name{
+    font-size: 1rem;
+  }
+  .job-duration, .job-title{
+    font-size: 0.8rem;
+  }
+  .job-list li{
+    font-size: 0.9rem;
+  }
+  .back-container {
+    display: none;
   }
 }
